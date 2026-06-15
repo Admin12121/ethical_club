@@ -14,7 +14,7 @@ export default function Page() {
           className="absolute inset-0"
           style={{
             background:
-              "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(191, 255, 0, 0.06) 0%, transparent 60%), radial-gradient(ellipse 60% 50% at 80% 100%, rgba(191, 255, 0, 0.04) 0%, transparent 50%)",
+              "radial-gradient(ellipse 80% 60% at 50% 0%, rgb(42 100 227 / 10%) 0%, transparent 60%), radial-gradient(ellipse 60% 50% at 80% 100%, rgb(42 100 227 / 4%) 0%, transparent 50%)",
           }}
         ></div>
         <div
@@ -47,7 +47,7 @@ export default function Page() {
 
         <div className="lg:pr-[440px]">
           <div className="lg:min-h-[600px]">
-            <div className="mx-auto flex max-w-xl flex-col items-center gap-6 pb-16 pt-6 text-center lg:mx-0 lg:items-start lg:gap-8 lg:pt-24 lg:text-left">
+            <div className="mx-auto flex max-w-xl flex-col items-center gap-6 pb-16 pt-6 text-center lg:mx-0 lg:items-start lg:gap-8 lg:pt-50 lg:text-left">
               <div className="space-y-4 text-pretty">
                 <h1
                   className="text-4xl leading-[1.1] font-bold tracking-tight text-pretty sm:text-5xl lg:text-6xl"
