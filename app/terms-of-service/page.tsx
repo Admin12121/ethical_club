@@ -15,7 +15,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { Frame } from "@/components/ui/frame";
-import ShinyText from "@/components/global/shiny-text";
 
 const sections = [
   {

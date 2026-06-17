@@ -1,9 +1,96 @@
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist_Mono, Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
 
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import Footer from "@/components/global/footer";
+import localFont from "next/font/local";
+
+const ataero = localFont({
+  src: "./assets/AtAero-Medium.woff2",
+  variable: "--font-ataero-medium",
+  weight: "500",
+});
+
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://ethical-club.vercel.app";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Cybersecurity Club of Softwarica",
+    template: "%s | Cybersecurity Club of Softwarica",
+  },
+  description:
+    "Hack to Learn, Learn to Defend — a student-driven community mastering ethical hacking, CTF competitions, and defensive security at Softwarica College of IT & E-Commerce.",
+  keywords: [
+    "cybersecurity",
+    "ethical hacking",
+    "CTF",
+    "Softwarica College",
+    "capture the flag",
+    "defensive security",
+    "cryptography",
+    "student club",
+    "Nepal",
+    "information security",
+  ],
+  authors: [{ name: "Cybersecurity Club of Softwarica" }],
+  creator: "Cybersecurity Club of Softwarica",
+  publisher: "Softwarica College of IT & E-Commerce",
+  category: "education",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "Cybersecurity Club of Softwarica",
+    title: "Cybersecurity Club of Softwarica",
+    description:
+      "Hack to Learn, Learn to Defend — a student-driven community mastering ethical hacking, CTF competitions, and defensive security at Softwarica College of IT & E-Commerce.",
+    images: [
+      {
+        url: "/images/og.webp",
+        width: 1200,
+        height: 630,
+        alt: "Cybersecurity Club of Softwarica — triangular all-seeing eye logo with the tagline Hack to Learn, Learn to Defend on a dark background",
+        type: "image/webp",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cybersecurity Club of Softwarica",
+    description:
+      "Hack to Learn, Learn to Defend — ethical hacking, CTF competitions, and defensive security at Softwarica College.",
+    images: ["/images/og.webp"],
+    creator: "@softwarica_cyb",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#2a64e3",
+  colorScheme: "dark",
+  width: "device-width",
+  initialScale: 1,
+};
 
 const interHeading = Inter({ subsets: ["latin"], variable: "--font-heading" });
 
@@ -26,6 +113,7 @@ export default function RootLayout({
         inter.variable,
         interHeading.variable,
         geistMono.variable,
+        ataero.variable,
       )}
     >
       <body>

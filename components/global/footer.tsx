@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="relative mx-auto max-w-7xl px-6 lg:px-12">
+    <div className="relative mx-auto max-w-7xl px-6 lg:px-12 pb-4">
       <div className="flex flex-col gap-4 max-w-175">
         <svg
           height="24px"

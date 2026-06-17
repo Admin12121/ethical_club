@@ -1,0 +1,27 @@
+# Cybersecurity Club of Softwarica
+
+> Hack to Learn, Learn to Defend — a student-driven community mastering ethical hacking, CTF competitions, and defensive security at Softwarica College of IT & E-Commerce, Nepal.
+
+## About
+
+The Cybersecurity Club of Softwarica (also known as 26 Club) is a student-run organization at Softwarica College of IT & E-Commerce in Nepal. The club focuses on building practical cybersecurity skills through hands-on learning, ethical hacking practice, Capture the Flag (CTF) competitions, cryptography, and defensive security training.
+
+## Topics
+
+- Ethical Hacking
+- Capture the Flag (CTF) Competitions
+- Defensive Security
+- Cryptography
+- Network Security
+- Web Application Security
+- Penetration Testing
+- Security Research
+
+## Pages
+
+- Homepage: /
+- Terms of Service: /terms-of-service
+
+## Terms of Service
+
+The club operates under a formal code of conduct covering membership eligibility (enrolled Softwarica students in good standing), behavioral standards (ethical, authorized use only), governance by a Board of Directors (BoDs) with faculty advisor support, a progressive disciplinary process, and an annual review cycle.
