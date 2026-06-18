@@ -212,10 +212,10 @@ export default function TermsOfServicePage() {
   return (
     <section className="relative mx-auto gap-3 flex w-full max-w-7xl flex-col px-6 py-10 sm:px-8 lg:px-12 lg:py-16">
       <h1
-        className="mt-5 text-4xl font-bold tracking-tight text-balance sm:text-5xl lg:text-6xl text-center text-white"
+        className="mt-24 text-4xl font-bold tracking-tight text-balance sm:text-5xl lg:text-6xl text-center text-white"
         style={{ fontFamily: "var(--font-geist-pixel-circle)" }}
       >
-        Terms of Service
+        The Manifesto.
       </h1>
       <p className="mx-auto mt-4 text-justify text-sm leading-7 text-white/70 sm:text-base">
         These Rules and Regulations outline the purpose, duration, conduct,

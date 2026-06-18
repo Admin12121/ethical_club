@@ -375,3 +375,8 @@
   pointer-events: none;
   will-change: transform;
 }
+
+
+::-webkit-scrollbar {
+  width: 0px;
+}

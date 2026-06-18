@@ -43,13 +43,13 @@ export default function Footer() {
               Cybersecurity Club of Softwarica © {new Date().getFullYear()} |
               All Right Reserved
             </p>
-            <span aria-hidden="true">.</span>
+            {/* <span aria-hidden="true">.</span>
             <Link
               className="hover:text-white transition duration-500"
               href="/terms-of-service"
             >
               Terms of Service
-            </Link>
+            </Link> */}
           </span>
         </div>
       </div>

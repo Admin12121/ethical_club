@@ -1,11 +1,12 @@
 "use client";
 
 import DitheredLogo from "@/components/global/dithered-logo";
+import Link from "next/link";
 
 export default function Page() {
   return (
-    <section className="relative mx-auto max-w-7xl px-6 lg:px-12">
-      <div className="flex justify-center pt-10 pb-6 lg:absolute lg:right-12 lg:top-1/2 lg:w-[400px] lg:-translate-y-1/4 lg:justify-center lg:p-0">
+    <section className="relative mx-auto max-w-7xl px-6 lg:px-12 pt-24">
+      <div className="flex justify-center pt-10 pb-6 lg:absolute lg:right-12 lg:top-1/2 lg:w-[400px] lg:-translate-y-1/5 lg:justify-center lg:p-0">
         <DitheredLogo
           imageSrc="/images/logo.webp"
           gridSize={400}
@@ -141,8 +142,9 @@ export default function Page() {
               </span>
             </div>
             <div className="flex w-full flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-center sm:gap-4 lg:justify-start">
-              <a
-                href="#"
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfvuHKIM-RKSkAVnFWy-SmBvijg2aRBiUGfPteT9ZkpauY4vg/viewform"
+                target="_blank"
                 className="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-all hover:brightness-110"
                 style={{
                   backgroundColor: "var(--page-accent)",
@@ -150,9 +152,9 @@ export default function Page() {
                 }}
               >
                 Join the Club
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/the-manifesto"
                 className="inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-colors hover:brightness-125"
                 style={{
                   border: "1px solid var(--btn-secondary-border)",
@@ -177,7 +179,7 @@ export default function Page() {
                   <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
                 </svg>
                 Explore Resources
-              </a>
+              </Link>
             </div>
             <div>
               <span
