@@ -2,6 +2,7 @@
 
 import DitheredLogo from "@/components/global/dithered-logo";
 import Link from "next/link";
+import { MessageCircleCode } from "lucide-react";
 
 export default function Page() {
   return (
@@ -113,25 +114,15 @@ export default function Page() {
                 </span>
               </div>
               <div className="flex items-center gap-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                <MessageCircleCode
                   className="h-5 w-5"
                   style={{ color: "var(--page-fg-muted)" }}
-                >
-                  <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
-                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-                </svg>
+                />
                 <span
                   className="hidden text-sm font-medium sm:inline"
                   style={{ color: "var(--page-fg-muted)" }}
                 >
-                  Cryptography
+                  Cyber Talk
                 </span>
               </div>
               <span
